@@ -14,7 +14,7 @@ weights = ones(1, num_particles) / num_particles;
 % ROS setup
 clear ros2node
 node = ros2node("/matlab_node");
-posPub = ros2publisher(node, '/drone/position', 'geometry_msgs/Point');
+posPub = ros2publisher(node, '/Robot/position', 'geometry_msgs/Point');
 pause(0.5);
 
 for t = 1:100
